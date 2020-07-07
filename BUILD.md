@@ -2,6 +2,7 @@
 
 #### 1) Setup your development environment
 a) First, follow the instructions to install and setup WSL2 and Ubuntu 20.04 on Windows 10 here:
+
 https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
 b) Once Ubuntu 20.04 is working, inside of Ubuntu's bash terminal install the following packages required for MSVS2019 WSL platform toolset support:
@@ -9,7 +10,8 @@ b) Once Ubuntu 20.04 is working, inside of Ubuntu's bash terminal install the fo
 $ sudo apt-get install g++ gdb make ninja-build rsync zip
 ```
 
-c) Install MSVS 2019 with the C++ for Linux Development component. For more information and instructions, see: https://docs.microsoft.com/en-us/cpp/linux/download-install-and-setup-the-linux-development-workload?view=vs-2019
+c) Install MSVS 2019 with the C++ for Linux Development component. For more information and instructions, see:
+https://docs.microsoft.com/en-us/cpp/linux/download-install-and-setup-the-linux-development-workload?view=vs-2019
 
 #### 2) Install Emscripten on Ubuntu 20.04 in WSL2
 a) From your home directory in an Ubuntu bash terminal, get the Emscripten SDK and install the Emscripten "upstream" variant:
@@ -26,14 +28,14 @@ c) Make Emscripten SDK tools available on the command line for all WSL instances
 ```
 $ nano $HOME/.profile
 ```
-...
+Control-paste the the following and save .profile file:
 ```
 # import Emscripten development environment settings if it exists
 if [ -f "$HOME/emsdk/emsdk_env.sh" ] ; then
     source $HOME/emsdk/emsdk_env.sh >/dev/null 2>&1
 fi
 ```
-Note that the I/O redirection above to /dev/null is necessary to suppress errors in Visual Studio when it runs a WSL instance. 
+Note that the stdout/stderr IO redirection above to /dev/null is necessary to suppress errors in Visual Studio when it runs a WSL instance. 
 
 #### 3) Build d3wasm
 a) Inside of Microsoft Visual Studio 2019 or using Git for Windows, clone the d3wasm source code such that it is stored on the Windows file system outside of WSL:

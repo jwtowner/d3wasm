@@ -3,10 +3,12 @@
 #### 1) Setup your development environment
 a) First, follow the instructions to install and setup WSL2 and Ubuntu 20.04 on Windows 10 here:
 https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
 b) Once Ubuntu 20.04 is working, inside of Ubuntu's bash terminal install the following packages required for MSVS2019 WSL platform toolset support:
 ```
 $ sudo apt-get install g++ gdb make ninja-build rsync zip
 ```
+
 c) Install MSVS 2019 with the C++ for Linux Development component. For more information and instructions, see: https://docs.microsoft.com/en-us/cpp/linux/download-install-and-setup-the-linux-development-workload?view=vs-2019
 
 #### 2) Install Emscripten on Ubuntu 20.04 in WSL2

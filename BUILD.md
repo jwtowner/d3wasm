@@ -1,5 +1,4 @@
-
-# Building on Windows 10 + WSL2 + Ubuntu 20.04 using Microsoft Visual Studio 2019 with the Clang for Windows Subsystem for Linux Platform Toolset
+# Build with Microsoft Visual Studio 2019 with the Clang for Windows Subsystem for Linux Platform Toolset
 
 #### 1) Setup your development environment
 a) First, follow the instructions to install and setup WSL2 and Ubuntu 20.04 on Windows 10 here:
@@ -38,11 +37,10 @@ Note that the I/O redirection above to /dev/null is necessary to suppress errors
 a) Inside of Microsoft Visual Studio 2019 or using Git for Windows, clone the d3wasm source code such that it is stored on the Windows file system outside of WSL:
 ```
 git clone https://github.com/jwtowner/d3wasm.git
-
 ```
-b) Open the d3wasm/neo/d3wasm.sln solution file and go to Main Menu -> Build -> Build All to build all projects. The build Configuration can be either Debug or Release, and the Platform either x86 or x64.
+b) With MSVS2019, open the *d3wasm/neo/d3wasm.sln* solution file and go to Main Menu -> Build -> Build All to build all projects. The build Configuration can be either Debug or Release, and the Platform either x86 or x64.
 
-Normally, this should generate *d3wasm.html*, *d3wasm.js*, and *d3wasm.wasm* files in the bin/$(Configuration) output directory. However, due to a bug either in MSVS2019 C++ for Linux builds component or perhaps in WSL2, when the MultiProcNumber MSBuild property is set to a sufficiently high number to enable parallel building of translation units, the build will fail with the MSBuild Compile task throwing an unexpected exception from inside of the liblinux.Local.Shell.WindowsSubsystemShell.VerifyEcho member function. To complete the build, try building the solution a few times until everything succeeds or set the value of MultiProcNumber to a lower value inside of the *d3wasm/neo/Common.props* file.
+Normally, this should generate *d3wasm.html*, *d3wasm.js*, and *d3wasm.wasm* files in the bin/$(Configuration) output directory. However, due to a bug either in MSVS2019 C++ for Linux builds component or perhaps in WSL2, when the MultiProcNumber MSBuild property is set to a sufficiently high number to enable parallel building of translation units, the build will fail with the MSBuild Compile task throwing an unexpected exception from inside of the `liblinux.Local.Shell.WindowsSubsystemShell.VerifyEcho` member function. To complete the build, try building the solution a few times until everything succeeds or set the value of MultiProcNumber to a lower value inside of the *d3wasm/neo/Common.props* file.
 
 #### 4) Package the game demo data
 a) Get the Doom 3 Demo from Fileplanet (or other sources): https://www.fileplanet.com/archive/p-15998/DOOM-3-Demo

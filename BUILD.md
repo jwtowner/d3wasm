@@ -1,32 +1,48 @@
 
-# Building on Ubuntu 18.04
+# Building on Windows 10 + WSL2 + Ubuntu 20.04 using Microsoft Visual Studio 2019 with the Clang for Windows Subsystem for Linux Platform Toolset
 
-#### 1) Install Emscripten
-a) Get the Emscripten SDK and install Emscripten "upstream" variant:
+#### 1) Setup your development environment
+a) First, follow the instructions to install and setup WSL2 and Ubuntu 20.04 on Windows 10 here:
+https://docs.microsoft.com/en-us/windows/wsl/install-win10
+b) Once Ubuntu 20.04 is working, inside of Ubuntu's bash terminal install the following packages required for MSVS2019 WSL platform toolset support:
 ```
-git clone https://github.com/emscripten-core/emsdk.git
-./emsdk/emsdk install latest-upstream
-./emsdk/emsdk activate latest-upstream
- ``` 
-b) Enable Emscripten tools from the command line
+$ sudo apt-get install g++ gdb make ninja-build rsync zip
 ```
-source ./emsdk/emsdk_env.sh
-```
+c) Install MSVS 2019 with the C++ for Linux Development component. For more information and instructions, see: https://docs.microsoft.com/en-us/cpp/linux/download-install-and-setup-the-linux-development-workload?view=vs-2019
 
-#### 2) Build d3wasm
-a) Get d3wasm source code 
+#### 2) Install Emscripten on Ubuntu 20.04 in WSL2
+a) From your home directory in an Ubuntu bash terminal, get the Emscripten SDK and install the Emscripten "upstream" variant:
 ```
-git clone https://github.com/gabrielcuvillier/d3wasm.git
-cd d3wasm
+$ git clone https://github.com/emscripten-core/emsdk.git
+$ ./emsdk/emsdk install latest-upstream
+$ ./emsdk/emsdk activate latest-upstream
+ ```
+b) Enable Emscripten SDK tools on the command line for current shell
 ```
-b) Build the project
+$ source ./emsdk/emsdk_env.sh
 ```
-mkdir build-wasm
-cd build-wasm
-emcmake cmake ../neo -DCMAKE_BUILD_TYPE=Release
-emmake make
+c) Make Emscripten SDK tools available on the command line for all WSL instances. Append the following using the editor of your choice to the bottom of your $HOME/.profile configuration file. Example:
 ```
-Normaly, this should have generated *d3wasm.html*, *d3wasm.js*, and *d3wasm.wasm* files.
+$ nano $HOME/.profile
+```
+...
+```
+# import Emscripten development environment settings if it exists
+if [ -f "$HOME/emsdk/emsdk_env.sh" ] ; then
+    source $HOME/emsdk/emsdk_env.sh >/dev/null 2>&1
+fi
+```
+Note that the I/O redirection above to /dev/null is necessary to suppress errors in Visual Studio when it runs a WSL instance. 
+
+#### 3) Build d3wasm
+a) Inside of Microsoft Visual Studio 2019 or using Git for Windows, clone the d3wasm source code such that it is stored on the Windows file system outside of WSL:
+```
+git clone https://github.com/jwtowner/d3wasm.git
+
+```
+b) Open the d3wasm/neo/d3wasm.sln solution file and go to Main Menu -> Build -> Build All to build all projects. The build Configuration can be either Debug or Release, and the Platform either x86 or x64.
+
+Normally, this should generate *d3wasm.html*, *d3wasm.js*, and *d3wasm.wasm* files in the bin/$(Configuration) output directory. However, due to a bug either in MSVS2019 C++ for Linux builds component or perhaps in WSL2, when the MultiProcNumber MSBuild property is set to a sufficiently high number to enable parallel building of translation units, the build will fail with the MSBuild Compile task throwing an unexpected exception from inside of the liblinux.Local.Shell.WindowsSubsystemShell.VerifyEcho member function. To complete the build, try building the solution a few times until everything succeeds or set the value of MultiProcNumber to a lower value inside of the *d3wasm/neo/Common.props* file.
 
 #### 4) Package the game demo data
 a) Get the Doom 3 Demo from Fileplanet (or other sources): https://www.fileplanet.com/archive/p-15998/DOOM-3-Demo
@@ -63,9 +79,3 @@ To do so:
   make
 ```
 Packaging the data works differently for native builds. Have a look at https://github.com/dhewm/dhewm3/wiki/FAQ
-
-# Building on Windows 10
-
-While it is possible to build using the Windows version of Emscripten toolchain, it is a bit more tedious to do (require to manually install Windows version of Cmake, GNU Make or Ninja, and setup environment paths).
-
-A simpler way is to use **WSL** (*Windows Subsystem for Linux*) with Ubuntu 18.04 installed: the instructions are then exactly the same as the Ubuntu build. Nice!

@@ -8,6 +8,6 @@ Full technical details and online demonstration here:
 
 http://www.continuation-labs.com/projects/d3wasm/
 
-See BUILD.md for build instructions.
+This particular fork of d3wasm has been modified to allow building with Microsoft Visual Studio 2019 on Windows 10 + WSL2 + Ubuntu 20.04 using the Clang Windows Subsystem for Linux Platform Toolset. See BUILD.md for build instructions.
 
 Enjoy!

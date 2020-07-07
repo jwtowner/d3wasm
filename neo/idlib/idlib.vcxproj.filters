@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="bv">
+      <UniqueIdentifier>{eb8347f6-70cb-40f5-a195-aeb862185283}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="containers">
+      <UniqueIdentifier>{0c685d65-f2c8-46a8-8e08-11c81f13685b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="geometry">
+      <UniqueIdentifier>{9207127b-03b2-42c8-af7f-7a3e5291d8a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hashing">
+      <UniqueIdentifier>{3fc13384-de12-4230-af90-2ba8625e15c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{c18a7aee-ce6c-4439-8c8e-d41730d27058}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bv\Bounds.cpp">
+      <Filter>bv</Filter>
+    </ClCompile>
+    <ClCompile Include="bv\Box.cpp">
+      <Filter>bv</Filter>
+    </ClCompile>
+    <ClCompile Include="bv\Frustum.cpp">
+      <Filter>bv</Filter>
+    </ClCompile>
+    <ClCompile Include="bv\Sphere.cpp">
+      <Filter>bv</Filter>
+    </ClCompile>
+    <ClCompile Include="containers\HashIndex.cpp">
+      <Filter>containers</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry\DrawVert.cpp">
+      <Filter>geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry\JointTransform.cpp">
+      <Filter>geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry\Surface.cpp">
+      <Filter>geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry\Surface_Patch.cpp">
+      <Filter>geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry\Surface_Polytope.cpp">
+      <Filter>geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry\Surface_SweptSpline.cpp">
+      <Filter>geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry\TraceModel.cpp">
+      <Filter>geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry\Winding.cpp">
+      <Filter>geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry\Winding2D.cpp">
+      <Filter>geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="hashing\CRC32.cpp">
+      <Filter>hashing</Filter>
+    </ClCompile>
+    <ClCompile Include="hashing\MD4.cpp">
+      <Filter>hashing</Filter>
+    </ClCompile>
+    <ClCompile Include="hashing\MD5.cpp">
+      <Filter>hashing</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Angles.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Complex.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Lcp.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Math.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Matrix.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Ode.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Plane.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Pluecker.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Polynomial.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Quat.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Rotation.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Simd.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Simd_Generic.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Simd_MMX.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Simd_SSE.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Simd_SSE2.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Simd_SSE3.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Vector.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="Base64.cpp" />
+    <ClCompile Include="BitMsg.cpp" />
+    <ClCompile Include="CmdArgs.cpp" />
+    <ClCompile Include="Dict.cpp" />
+    <ClCompile Include="Heap.cpp" />
+    <ClCompile Include="LangDict.cpp" />
+    <ClCompile Include="Lexer.cpp" />
+    <ClCompile Include="Lib.cpp" />
+    <ClCompile Include="MapFile.cpp" />
+    <ClCompile Include="Parser.cpp" />
+    <ClCompile Include="Str.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="Token.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bv\Bounds.h">
+      <Filter>bv</Filter>
+    </ClInclude>
+    <ClInclude Include="bv\Box.h">
+      <Filter>bv</Filter>
+    </ClInclude>
+    <ClInclude Include="bv\Frustum.h">
+      <Filter>bv</Filter>
+    </ClInclude>
+    <ClInclude Include="bv\Sphere.h">
+      <Filter>bv</Filter>
+    </ClInclude>
+    <ClInclude Include="containers\BinSearch.h">
+      <Filter>containers</Filter>
+    </ClInclude>
+    <ClInclude Include="containers\BTree.h">
+      <Filter>containers</Filter>
+    </ClInclude>
+    <ClInclude Include="containers\HashIndex.h">
+      <Filter>containers</Filter>
+    </ClInclude>
+    <ClInclude Include="containers\HashTable.h">
+      <Filter>containers</Filter>
+    </ClInclude>
+    <ClInclude Include="containers\Hierarchy.h">
+      <Filter>containers</Filter>
+    </ClInclude>
+    <ClInclude Include="containers\LinkList.h">
+      <Filter>containers</Filter>
+    </ClInclude>
+    <ClInclude Include="containers\List.h">
+      <Filter>containers</Filter>
+    </ClInclude>
+    <ClInclude Include="containers\PlaneSet.h">
+      <Filter>containers</Filter>
+    </ClInclude>
+    <ClInclude Include="containers\Queue.h">
+      <Filter>containers</Filter>
+    </ClInclude>
+    <ClInclude Include="containers\Stack.h">
+      <Filter>containers</Filter>
+    </ClInclude>
+    <ClInclude Include="containers\StaticList.h">
+      <Filter>containers</Filter>
+    </ClInclude>
+    <ClInclude Include="containers\StrList.h">
+      <Filter>containers</Filter>
+    </ClInclude>
+    <ClInclude Include="containers\StrPool.h">
+      <Filter>containers</Filter>
+    </ClInclude>
+    <ClInclude Include="containers\VectorSet.h">
+      <Filter>containers</Filter>
+    </ClInclude>
+    <ClInclude Include="geometry\DrawVert.h">
+      <Filter>geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="geometry\JointTransform.h">
+      <Filter>geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="geometry\Surface.h">
+      <Filter>geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="geometry\Surface_Patch.h">
+      <Filter>geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="geometry\Surface_Polytope.h">
+      <Filter>geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="geometry\Surface_SweptSpline.h">
+      <Filter>geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="geometry\TraceModel.h">
+      <Filter>geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="geometry\Winding.h">
+      <Filter>geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="geometry\Winding2D.h">
+      <Filter>geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="hashing\CRC32.h">
+      <Filter>hashing</Filter>
+    </ClInclude>
+    <ClInclude Include="hashing\MD4.h">
+      <Filter>hashing</Filter>
+    </ClInclude>
+    <ClInclude Include="hashing\MD5.h">
+      <Filter>hashing</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Angles.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Complex.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Curve.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Extrapolate.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Interpolate.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Lcp.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Math.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Matrix.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Ode.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Plane.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Pluecker.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Polynomial.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Quat.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Random.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Rotation.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Simd.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Simd_Generic.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Simd_MMX.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Simd_SSE.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Simd_SSE2.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Simd_SSE3.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Vector.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="Base64.h" />
+    <ClInclude Include="BitMsg.h" />
+    <ClInclude Include="CmdArgs.h" />
+    <ClInclude Include="Dict.h" />
+    <ClInclude Include="Heap.h" />
+    <ClInclude Include="LangDict.h" />
+    <ClInclude Include="Lexer.h" />
+    <ClInclude Include="Lib.h" />
+    <ClInclude Include="MapFile.h" />
+    <ClInclude Include="Parser.h" />
+    <ClInclude Include="Str.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Token.h" />
+  </ItemGroup>
+</Project>

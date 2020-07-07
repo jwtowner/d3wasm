@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ai">
+      <UniqueIdentifier>{175df849-543b-4bc6-9284-2ffa86651bbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="anim">
+      <UniqueIdentifier>{c618e6e5-3bb6-47b5-b859-701a34d7ec4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gamesys">
+      <UniqueIdentifier>{70538e63-3763-4241-97d0-4cfc2778409b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="physics">
+      <UniqueIdentifier>{c82e6fe0-4cd9-49a9-a0bb-9b72da3c4484}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="script">
+      <UniqueIdentifier>{3695ba6e-4676-411d-bf48-7801a1b9cd62}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ai\AAS.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="ai\AAS_debug.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="ai\AAS_pathing.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="ai\AAS_routing.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="ai\AI.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="ai\AI_events.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="ai\AI_pathing.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="ai\AI_Vagary.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="anim\Anim.cpp">
+      <Filter>anim</Filter>
+    </ClCompile>
+    <ClCompile Include="anim\Anim_Blend.cpp">
+      <Filter>anim</Filter>
+    </ClCompile>
+    <ClCompile Include="gamesys\Callbacks.cpp">
+      <Filter>gamesys</Filter>
+    </ClCompile>
+    <ClCompile Include="gamesys\Class.cpp">
+      <Filter>gamesys</Filter>
+    </ClCompile>
+    <ClCompile Include="gamesys\DebugGraph.cpp">
+      <Filter>gamesys</Filter>
+    </ClCompile>
+    <ClCompile Include="gamesys\Event.cpp">
+      <Filter>gamesys</Filter>
+    </ClCompile>
+    <ClCompile Include="gamesys\SaveGame.cpp">
+      <Filter>gamesys</Filter>
+    </ClCompile>
+    <ClCompile Include="gamesys\SysCmds.cpp">
+      <Filter>gamesys</Filter>
+    </ClCompile>
+    <ClCompile Include="gamesys\SysCvar.cpp">
+      <Filter>gamesys</Filter>
+    </ClCompile>
+    <ClCompile Include="gamesys\TypeInfo.cpp">
+      <Filter>gamesys</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Script_Compiler.cpp">
+      <Filter>script</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Script_Interpreter.cpp">
+      <Filter>script</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Script_Program.cpp">
+      <Filter>script</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Script_Thread.cpp">
+      <Filter>script</Filter>
+    </ClCompile>
+    <ClCompile Include="physics\Clip.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="physics\Force.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="physics\Force_Constant.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="physics\Force_Drag.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="physics\Force_Field.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="physics\Force_Spring.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="physics\Physics.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="physics\Physics_Actor.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="physics\Physics_AF.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="physics\Physics_Base.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="physics\Physics_Monster.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="physics\Physics_Parametric.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="physics\Physics_Player.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="physics\Physics_RigidBody.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="physics\Physics_Static.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="physics\Physics_StaticMulti.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="physics\Push.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor.cpp" />
+    <ClCompile Include="AF.cpp" />
+    <ClCompile Include="AFEntity.cpp" />
+    <ClCompile Include="BrittleFracture.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="EndLevel.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="Fx.cpp" />
+    <ClCompile Include="Game_local.cpp" />
+    <ClCompile Include="Game_network.cpp" />
+    <ClCompile Include="GameEdit.cpp" />
+    <ClCompile Include="IK.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="Light.cpp" />
+    <ClCompile Include="Misc.cpp" />
+    <ClCompile Include="Moveable.cpp" />
+    <ClCompile Include="Mover.cpp" />
+    <ClCompile Include="MultiplayerGame.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerIcon.cpp" />
+    <ClCompile Include="PlayerView.cpp" />
+    <ClCompile Include="Projectile.cpp" />
+    <ClCompile Include="Pvs.cpp" />
+    <ClCompile Include="SecurityCamera.cpp" />
+    <ClCompile Include="SmokeParticles.cpp" />
+    <ClCompile Include="Sound.cpp" />
+    <ClCompile Include="Target.cpp" />
+    <ClCompile Include="Trigger.cpp" />
+    <ClCompile Include="Weapon.cpp" />
+    <ClCompile Include="WorldSpawn.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ai\AAS.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="ai\AAS_local.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="ai\AI.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="anim\Anim.h">
+      <Filter>anim</Filter>
+    </ClInclude>
+    <ClInclude Include="gamesys\Class.h">
+      <Filter>gamesys</Filter>
+    </ClInclude>
+    <ClInclude Include="gamesys\DebugGraph.h">
+      <Filter>gamesys</Filter>
+    </ClInclude>
+    <ClInclude Include="gamesys\Event.h">
+      <Filter>gamesys</Filter>
+    </ClInclude>
+    <ClInclude Include="gamesys\NoGameTypeInfo.h">
+      <Filter>gamesys</Filter>
+    </ClInclude>
+    <ClInclude Include="gamesys\SaveGame.h">
+      <Filter>gamesys</Filter>
+    </ClInclude>
+    <ClInclude Include="gamesys\SysCmds.h">
+      <Filter>gamesys</Filter>
+    </ClInclude>
+    <ClInclude Include="gamesys\SysCvar.h">
+      <Filter>gamesys</Filter>
+    </ClInclude>
+    <ClInclude Include="gamesys\TypeInfo.h">
+      <Filter>gamesys</Filter>
+    </ClInclude>
+    <ClInclude Include="script\Script_Compiler.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="script\Script_Interpreter.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="script\Script_Program.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="script\Script_Thread.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="physics\Clip.h">
+      <Filter>physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physics\Force.h">
+      <Filter>physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physics\Force_Constant.h">
+      <Filter>physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physics\Force_Drag.h">
+      <Filter>physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physics\Force_Field.h">
+      <Filter>physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physics\Force_Spring.h">
+      <Filter>physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physics\Physics.h">
+      <Filter>physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physics\Physics_Actor.h">
+      <Filter>physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physics\Physics_AF.h">
+      <Filter>physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physics\Physics_Base.h">
+      <Filter>physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physics\Physics_Monster.h">
+      <Filter>physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physics\Physics_Parametric.h">
+      <Filter>physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physics\Physics_Player.h">
+      <Filter>physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physics\Physics_RigidBody.h">
+      <Filter>physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physics\Physics_Static.h">
+      <Filter>physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physics\Physics_StaticMulti.h">
+      <Filter>physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physics\Push.h">
+      <Filter>physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor.h" />
+    <ClInclude Include="AF.h" />
+    <ClInclude Include="AFEntity.h" />
+    <ClInclude Include="BrittleFracture.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="EndLevel.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="Fx.h" />
+    <ClInclude Include="Game_local.h" />
+    <ClInclude Include="GameBase.h" />
+    <ClInclude Include="GameEdit.h" />
+    <ClInclude Include="IK.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="Light.h" />
+    <ClInclude Include="Misc.h" />
+    <ClInclude Include="Moveable.h" />
+    <ClInclude Include="Mover.h" />
+    <ClInclude Include="MultiplayerGame.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerIcon.h" />
+    <ClInclude Include="PlayerView.h" />
+    <ClInclude Include="Projectile.h" />
+    <ClInclude Include="Pvs.h" />
+    <ClInclude Include="SecurityCamera.h" />
+    <ClInclude Include="SmokeParticles.h" />
+    <ClInclude Include="Sound.h" />
+    <ClInclude Include="Target.h" />
+    <ClInclude Include="Trigger.h" />
+    <ClInclude Include="Weapon.h" />
+    <ClInclude Include="WorldSpawn.h" />
+  </ItemGroup>
+</Project>

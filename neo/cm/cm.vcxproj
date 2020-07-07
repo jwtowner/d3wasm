@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{fa4bae52-3c00-4aa1-b8c6-25f3c9f2cf08}</ProjectGuid>
+    <RootNamespace>cm</RootNamespace>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="..\StaticLibrary.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClInclude Include="CollisionModel.h" />
+    <ClInclude Include="CollisionModel_local.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CollisionModel_contacts.cpp" />
+    <ClCompile Include="CollisionModel_contents.cpp" />
+    <ClCompile Include="CollisionModel_debug.cpp" />
+    <ClCompile Include="CollisionModel_files.cpp" />
+    <ClCompile Include="CollisionModel_load.cpp" />
+    <ClCompile Include="CollisionModel_rotate.cpp" />
+    <ClCompile Include="CollisionModel_trace.cpp" />
+    <ClCompile Include="CollisionModel_translate.cpp" />
+  </ItemGroup>
+  <ItemDefinitionGroup />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

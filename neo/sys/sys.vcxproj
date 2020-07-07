@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{47e9c344-d20e-4eb8-8a4b-70636228d506}</ProjectGuid>
+    <RootNamespace>sys</RootNamespace>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="..\Application.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <TargetName>d3wasm</TargetName>
+    <TargetExt>.html</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions) --pre-js $(WslNeoDir)sys/wasm/pre.js --shell-file $(WslNeoDir)sys/wasm/shell.html -lcm -lframework -lgame -lidlib -lrenderer -lsound -ltools -lui</AdditionalOptions>
+      <AdditionalLibraryDirectories>$(WslNeoDir)../lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="cpu.cpp" />
+    <ClCompile Include="events.cpp" />
+    <ClCompile Include="glimp.cpp" />
+    <ClCompile Include="linux\main.cpp" />
+    <ClCompile Include="posix\posix_main.cpp" />
+    <ClCompile Include="posix\posix_net.cpp" />
+    <ClCompile Include="sys_local.cpp" />
+    <ClCompile Include="threads.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="doom_icon.h" />
+    <ClInclude Include="platform.h" />
+    <ClInclude Include="posix\posix_public.h" />
+    <ClInclude Include="sys_local.h" />
+    <ClInclude Include="sys_public.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wasm\asyncify.json" />
+    <None Include="wasm\asyncify.win.json" />
+    <None Include="wasm\package_chunked_demo_data.bat" />
+    <None Include="wasm\package_chunked_demo_data.sh" />
+    <None Include="wasm\package_demo_data.bat" />
+    <None Include="wasm\package_demo_data.sh" />
+    <None Include="wasm\post-chunked.js" />
+    <None Include="wasm\pre-chunked.js" />
+    <None Include="wasm\pre.js" />
+    <None Include="wasm\shell.html" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

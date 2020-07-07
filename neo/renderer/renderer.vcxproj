@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{aaccc9ff-1723-4f35-9d6d-28b361c81204}</ProjectGuid>
+    <RootNamespace>renderer</RootNamespace>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="..\StaticLibrary.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClCompile Include="Cinematic.cpp" />
+    <ClCompile Include="draw_common.cpp" />
+    <ClCompile Include="draw_gles2.cpp" />
+    <ClCompile Include="glsl\blendLightShaderVP.cpp" />
+    <ClCompile Include="glsl\cubeMapShaderFP.cpp" />
+    <ClCompile Include="glsl\diffuseCubeShaderVP.cpp" />
+    <ClCompile Include="glsl\diffuseMapShaderFP.cpp" />
+    <ClCompile Include="glsl\diffuseMapShaderVP.cpp" />
+    <ClCompile Include="glsl\fogShaderFP.cpp" />
+    <ClCompile Include="glsl\fogShaderVP.cpp" />
+    <ClCompile Include="glsl\interactionPhongShaderFP.cpp" />
+    <ClCompile Include="glsl\interactionPhongShaderVP.cpp" />
+    <ClCompile Include="glsl\interactionShaderFP.cpp" />
+    <ClCompile Include="glsl\interactionShaderVP.cpp" />
+    <ClCompile Include="glsl\reflectionCubeShaderVP.cpp" />
+    <ClCompile Include="glsl\skyboxCubeShaderVP.cpp" />
+    <ClCompile Include="glsl\stencilShadowShaderFP.cpp" />
+    <ClCompile Include="glsl\stencilShadowShaderVP.cpp" />
+    <ClCompile Include="glsl\zfillClipShaderFP.cpp" />
+    <ClCompile Include="glsl\zfillClipShaderVP.cpp" />
+    <ClCompile Include="glsl\zfillShaderFP.cpp" />
+    <ClCompile Include="glsl\zfillShaderVP.cpp" />
+    <ClCompile Include="GuiModel.cpp" />
+    <ClCompile Include="Image_files.cpp" />
+    <ClCompile Include="Image_init.cpp" />
+    <ClCompile Include="Image_load.cpp" />
+    <ClCompile Include="Image_process.cpp" />
+    <ClCompile Include="Image_program.cpp" />
+    <ClCompile Include="Interaction.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="MegaTexture.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="ModelDecal.cpp" />
+    <ClCompile Include="ModelManager.cpp" />
+    <ClCompile Include="ModelOverlay.cpp" />
+    <ClCompile Include="Model_ase.cpp" />
+    <ClCompile Include="Model_beam.cpp" />
+    <ClCompile Include="Model_liquid.cpp" />
+    <ClCompile Include="Model_lwo.cpp" />
+    <ClCompile Include="Model_ma.cpp" />
+    <ClCompile Include="Model_md3.cpp" />
+    <ClCompile Include="Model_md5.cpp" />
+    <ClCompile Include="Model_prt.cpp" />
+    <ClCompile Include="Model_sprite.cpp" />
+    <ClCompile Include="RenderEntity.cpp" />
+    <ClCompile Include="RenderSystem.cpp" />
+    <ClCompile Include="RenderSystem_init.cpp" />
+    <ClCompile Include="RenderWorld.cpp" />
+    <ClCompile Include="RenderWorld_demo.cpp" />
+    <ClCompile Include="RenderWorld_load.cpp" />
+    <ClCompile Include="RenderWorld_portals.cpp" />
+    <ClCompile Include="tr_backend.cpp" />
+    <ClCompile Include="tr_deform.cpp" />
+    <ClCompile Include="tr_font.cpp" />
+    <ClCompile Include="tr_guisurf.cpp" />
+    <ClCompile Include="tr_light.cpp" />
+    <ClCompile Include="tr_lightrun.cpp" />
+    <ClCompile Include="tr_main.cpp" />
+    <ClCompile Include="tr_orderIndexes.cpp" />
+    <ClCompile Include="tr_polytope.cpp" />
+    <ClCompile Include="tr_render.cpp" />
+    <ClCompile Include="tr_shadowbounds.cpp" />
+    <ClCompile Include="tr_stencilshadow.cpp" />
+    <ClCompile Include="tr_subview.cpp" />
+    <ClCompile Include="tr_trace.cpp" />
+    <ClCompile Include="tr_trisurf.cpp" />
+    <ClCompile Include="tr_turboshadow.cpp" />
+    <ClCompile Include="VertexCache.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cinematic.h" />
+    <ClInclude Include="glsl\glsl_shaders.h" />
+    <ClInclude Include="GuiModel.h" />
+    <ClInclude Include="Image.h" />
+    <ClInclude Include="Interaction.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="MegaTexture.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="ModelDecal.h" />
+    <ClInclude Include="ModelManager.h" />
+    <ClInclude Include="ModelOverlay.h" />
+    <ClInclude Include="Model_ase.h" />
+    <ClInclude Include="Model_local.h" />
+    <ClInclude Include="Model_lwo.h" />
+    <ClInclude Include="Model_ma.h" />
+    <ClInclude Include="Model_md3.h" />
+    <ClInclude Include="qgl.h" />
+    <ClInclude Include="qgl_proc.h" />
+    <ClInclude Include="RenderSystem.h" />
+    <ClInclude Include="RenderWorld.h" />
+    <ClInclude Include="RenderWorld_local.h" />
+    <ClInclude Include="tr_local.h" />
+    <ClInclude Include="VertexCache.h" />
+  </ItemGroup>
+  <ItemDefinitionGroup />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

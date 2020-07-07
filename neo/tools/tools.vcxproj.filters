@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="compilers">
+      <UniqueIdentifier>{21d0957e-711c-422b-bbfd-4a567d8e875a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="compilers\aas">
+      <UniqueIdentifier>{07750f54-2f57-411b-9a4e-3b28ebc19d30}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="compilers\aas\AASBuild.cpp">
+      <Filter>compilers\aas</Filter>
+    </ClCompile>
+    <ClCompile Include="compilers\aas\AASBuild_file.cpp">
+      <Filter>compilers\aas</Filter>
+    </ClCompile>
+    <ClCompile Include="compilers\aas\AASBuild_gravity.cpp">
+      <Filter>compilers\aas</Filter>
+    </ClCompile>
+    <ClCompile Include="compilers\aas\AASBuild_ledge.cpp">
+      <Filter>compilers\aas</Filter>
+    </ClCompile>
+    <ClCompile Include="compilers\aas\AASBuild_merge.cpp">
+      <Filter>compilers\aas</Filter>
+    </ClCompile>
+    <ClCompile Include="compilers\aas\AASCluster.cpp">
+      <Filter>compilers\aas</Filter>
+    </ClCompile>
+    <ClCompile Include="compilers\aas\AASFile.cpp">
+      <Filter>compilers\aas</Filter>
+    </ClCompile>
+    <ClCompile Include="compilers\aas\AASFile_optimize.cpp">
+      <Filter>compilers\aas</Filter>
+    </ClCompile>
+    <ClCompile Include="compilers\aas\AASFile_sample.cpp">
+      <Filter>compilers\aas</Filter>
+    </ClCompile>
+    <ClCompile Include="compilers\aas\AASFileManager.cpp">
+      <Filter>compilers\aas</Filter>
+    </ClCompile>
+    <ClCompile Include="compilers\aas\AASReach.cpp">
+      <Filter>compilers\aas</Filter>
+    </ClCompile>
+    <ClCompile Include="compilers\aas\Brush.cpp">
+      <Filter>compilers\aas</Filter>
+    </ClCompile>
+    <ClCompile Include="compilers\aas\BrushBSP.cpp">
+      <Filter>compilers\aas</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="compilers\aas\AASBuild_local.h">
+      <Filter>compilers\aas</Filter>
+    </ClInclude>
+    <ClInclude Include="compilers\aas\AASCluster.h">
+      <Filter>compilers\aas</Filter>
+    </ClInclude>
+    <ClInclude Include="compilers\aas\AASFile.h">
+      <Filter>compilers\aas</Filter>
+    </ClInclude>
+    <ClInclude Include="compilers\aas\AASFile_local.h">
+      <Filter>compilers\aas</Filter>
+    </ClInclude>
+    <ClInclude Include="compilers\aas\AASFileManager.h">
+      <Filter>compilers\aas</Filter>
+    </ClInclude>
+    <ClInclude Include="compilers\aas\AASReach.h">
+      <Filter>compilers\aas</Filter>
+    </ClInclude>
+    <ClInclude Include="compilers\aas\Brush.h">
+      <Filter>compilers\aas</Filter>
+    </ClInclude>
+    <ClInclude Include="compilers\aas\BrushBSP.h">
+      <Filter>compilers\aas</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

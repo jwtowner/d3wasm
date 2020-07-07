@@ -30,6 +30,7 @@ If you have questions concerning this license or the applicable additional terms
 #define __SURFACE_POLYTOPE_H__
 
 #include "idlib/geometry/Surface.h"
+#include "idlib/bv/Bounds.h"
 
 /*
 ===============================================================================

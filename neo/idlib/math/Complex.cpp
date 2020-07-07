@@ -29,6 +29,7 @@ If you have questions concerning this license or the applicable additional terms
 #include "sys/platform.h"
 
 #include "idlib/math/Complex.h"
+#include "idlib/Str.h"
 
 idComplex complex_origin( 0.0f, 0.0f );
 

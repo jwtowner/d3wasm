@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="wasm">
+      <UniqueIdentifier>{cd0af0ce-7dd7-405c-b3fd-454c564ca0e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="posix">
+      <UniqueIdentifier>{57f969cf-2f5c-40ff-9103-2e48ac31d1cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="linux">
+      <UniqueIdentifier>{27a36cd0-7381-4b9a-bb25-608361dbfa4d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cpu.cpp" />
+    <ClCompile Include="events.cpp" />
+    <ClCompile Include="glimp.cpp" />
+    <ClCompile Include="sys_local.cpp" />
+    <ClCompile Include="threads.cpp" />
+    <ClCompile Include="posix\posix_main.cpp">
+      <Filter>posix</Filter>
+    </ClCompile>
+    <ClCompile Include="posix\posix_net.cpp">
+      <Filter>posix</Filter>
+    </ClCompile>
+    <ClCompile Include="linux\main.cpp">
+      <Filter>linux</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="doom_icon.h" />
+    <ClInclude Include="platform.h" />
+    <ClInclude Include="sys_local.h" />
+    <ClInclude Include="sys_public.h" />
+    <ClInclude Include="posix\posix_public.h">
+      <Filter>posix</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wasm\asyncify.json">
+      <Filter>wasm</Filter>
+    </None>
+    <None Include="wasm\asyncify.win.json">
+      <Filter>wasm</Filter>
+    </None>
+    <None Include="wasm\package_chunked_demo_data.bat">
+      <Filter>wasm</Filter>
+    </None>
+    <None Include="wasm\package_chunked_demo_data.sh">
+      <Filter>wasm</Filter>
+    </None>
+    <None Include="wasm\package_demo_data.bat">
+      <Filter>wasm</Filter>
+    </None>
+    <None Include="wasm\package_demo_data.sh">
+      <Filter>wasm</Filter>
+    </None>
+    <None Include="wasm\post-chunked.js">
+      <Filter>wasm</Filter>
+    </None>
+    <None Include="wasm\pre.js">
+      <Filter>wasm</Filter>
+    </None>
+    <None Include="wasm\pre-chunked.js">
+      <Filter>wasm</Filter>
+    </None>
+    <None Include="wasm\shell.html">
+      <Filter>wasm</Filter>
+    </None>
+  </ItemGroup>
+</Project>

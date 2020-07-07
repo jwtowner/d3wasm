@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{e8f95139-3c55-4c42-bcf7-271af83226ef}</ProjectGuid>
+    <RootNamespace>tools</RootNamespace>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="..\StaticLibrary.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClCompile Include="compilers\aas\AASBuild.cpp" />
+    <ClCompile Include="compilers\aas\AASBuild_file.cpp" />
+    <ClCompile Include="compilers\aas\AASBuild_gravity.cpp" />
+    <ClCompile Include="compilers\aas\AASBuild_ledge.cpp" />
+    <ClCompile Include="compilers\aas\AASBuild_merge.cpp" />
+    <ClCompile Include="compilers\aas\AASCluster.cpp" />
+    <ClCompile Include="compilers\aas\AASFile.cpp" />
+    <ClCompile Include="compilers\aas\AASFileManager.cpp" />
+    <ClCompile Include="compilers\aas\AASFile_optimize.cpp" />
+    <ClCompile Include="compilers\aas\AASFile_sample.cpp" />
+    <ClCompile Include="compilers\aas\AASReach.cpp" />
+    <ClCompile Include="compilers\aas\Brush.cpp" />
+    <ClCompile Include="compilers\aas\BrushBSP.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="compilers\aas\AASBuild_local.h" />
+    <ClInclude Include="compilers\aas\AASCluster.h" />
+    <ClInclude Include="compilers\aas\AASFile.h" />
+    <ClInclude Include="compilers\aas\AASFileManager.h" />
+    <ClInclude Include="compilers\aas\AASFile_local.h" />
+    <ClInclude Include="compilers\aas\AASReach.h" />
+    <ClInclude Include="compilers\aas\Brush.h" />
+    <ClInclude Include="compilers\aas\BrushBSP.h" />
+  </ItemGroup>
+  <ItemDefinitionGroup />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

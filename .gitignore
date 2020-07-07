@@ -1,10 +1,16 @@
+/bin
+/lib
+/obj
 /build*
 /cmake-build*
 /neo/cmake-build*
+/neo/out
 *~
 .*.swp
 *.pyc
+*.vcxproj.user
 .cproject
 .project
 .settings/
 .idea/
+.vs/

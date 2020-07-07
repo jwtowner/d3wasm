@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4cce8724-668b-4df2-9831-85d0ae13da54}</ProjectGuid>
+    <RootNamespace>framework</RootNamespace>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="..\StaticLibrary.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClCompile Include="async\AsyncClient.cpp" />
+    <ClCompile Include="async\AsyncNetwork.cpp" />
+    <ClCompile Include="async\MsgChannel.cpp" />
+    <ClCompile Include="async\NetworkSystem.cpp" />
+    <ClCompile Include="async\ServerScan.cpp" />
+    <ClCompile Include="CmdSystem.cpp" />
+    <ClCompile Include="Common.cpp" />
+    <ClCompile Include="Compressor.cpp" />
+    <ClCompile Include="Console.cpp" />
+    <ClCompile Include="CVarSystem.cpp" />
+    <ClCompile Include="DeclAF.cpp" />
+    <ClCompile Include="DeclEntityDef.cpp" />
+    <ClCompile Include="DeclFX.cpp" />
+    <ClCompile Include="DeclManager.cpp" />
+    <ClCompile Include="DeclParticle.cpp" />
+    <ClCompile Include="DeclPDA.cpp" />
+    <ClCompile Include="DeclSkin.cpp" />
+    <ClCompile Include="DeclTable.cpp" />
+    <ClCompile Include="DemoFile.cpp" />
+    <ClCompile Include="EditField.cpp" />
+    <ClCompile Include="EventLoop.cpp" />
+    <ClCompile Include="File.cpp" />
+    <ClCompile Include="FileSystem.cpp" />
+    <ClCompile Include="KeyInput.cpp" />
+    <ClCompile Include="minizip\ioapi.c" />
+    <ClCompile Include="minizip\unzip.cpp" />
+    <ClCompile Include="Session.cpp" />
+    <ClCompile Include="Session_menu.cpp" />
+    <ClCompile Include="UsercmdGen.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="async\AsyncClient.h" />
+    <ClInclude Include="async\AsyncNetwork.h" />
+    <ClInclude Include="async\MsgChannel.h" />
+    <ClInclude Include="async\NetworkSystem.h" />
+    <ClInclude Include="async\ServerScan.h" />
+    <ClInclude Include="BuildDefines.h" />
+    <ClInclude Include="BuildVersion.h" />
+    <ClInclude Include="CmdSystem.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="Compressor.h" />
+    <ClInclude Include="Console.h" />
+    <ClInclude Include="CVarSystem.h" />
+    <ClInclude Include="DeclAF.h" />
+    <ClInclude Include="DeclEntityDef.h" />
+    <ClInclude Include="DeclFX.h" />
+    <ClInclude Include="DeclManager.h" />
+    <ClInclude Include="DeclParticle.h" />
+    <ClInclude Include="DeclPDA.h" />
+    <ClInclude Include="DeclSkin.h" />
+    <ClInclude Include="DeclTable.h" />
+    <ClInclude Include="DemoChecksum.h" />
+    <ClInclude Include="DemoFile.h" />
+    <ClInclude Include="EditField.h" />
+    <ClInclude Include="EventLoop.h" />
+    <ClInclude Include="File.h" />
+    <ClInclude Include="FileSystem.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameCallbacks_local.h" />
+    <ClInclude Include="KeyInput.h" />
+    <ClInclude Include="Licensee.h" />
+    <ClInclude Include="minizip\ioapi.h" />
+    <ClInclude Include="minizip\unzip.h" />
+    <ClInclude Include="Session.h" />
+    <ClInclude Include="Session_local.h" />
+    <ClInclude Include="Unzip.h" />
+    <ClInclude Include="UsercmdGen.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="minizip\MiniZip64_info.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

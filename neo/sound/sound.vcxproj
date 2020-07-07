@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{a30eda88-ccdc-4f57-af59-0658e5fb6b04}</ProjectGuid>
+    <RootNamespace>sound</RootNamespace>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="..\StaticLibrary.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>NOEFX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="efxlib.h" />
+    <ClInclude Include="snd_local.h" />
+    <ClInclude Include="sound.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="snd_cache.cpp" />
+    <ClCompile Include="snd_decoder.cpp" />
+    <ClCompile Include="snd_efxfile.cpp" />
+    <ClCompile Include="snd_emitter.cpp" />
+    <ClCompile Include="snd_shader.cpp" />
+    <ClCompile Include="snd_system.cpp" />
+    <ClCompile Include="snd_wavefile.cpp" />
+    <ClCompile Include="snd_world.cpp" />
+  </ItemGroup>
+  <ItemDefinitionGroup />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

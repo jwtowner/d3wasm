@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{96d3c455-342f-4458-993e-e3b0b58bbe22}</ProjectGuid>
+    <RootNamespace>game</RootNamespace>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="..\StaticLibrary.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClCompile Include="Actor.cpp" />
+    <ClCompile Include="AF.cpp" />
+    <ClCompile Include="AFEntity.cpp" />
+    <ClCompile Include="ai\AAS.cpp" />
+    <ClCompile Include="ai\AAS_debug.cpp" />
+    <ClCompile Include="ai\AAS_pathing.cpp" />
+    <ClCompile Include="ai\AAS_routing.cpp" />
+    <ClCompile Include="ai\AI.cpp" />
+    <ClCompile Include="ai\AI_events.cpp" />
+    <ClCompile Include="ai\AI_pathing.cpp" />
+    <ClCompile Include="ai\AI_Vagary.cpp" />
+    <ClCompile Include="anim\Anim.cpp" />
+    <ClCompile Include="anim\Anim_Blend.cpp" />
+    <ClCompile Include="BrittleFracture.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="EndLevel.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="Fx.cpp" />
+    <ClCompile Include="GameEdit.cpp" />
+    <ClCompile Include="gamesys\Callbacks.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="gamesys\Class.cpp" />
+    <ClCompile Include="gamesys\DebugGraph.cpp" />
+    <ClCompile Include="gamesys\Event.cpp" />
+    <ClCompile Include="gamesys\SaveGame.cpp" />
+    <ClCompile Include="gamesys\SysCmds.cpp" />
+    <ClCompile Include="gamesys\SysCvar.cpp" />
+    <ClCompile Include="gamesys\TypeInfo.cpp" />
+    <ClCompile Include="Game_local.cpp" />
+    <ClCompile Include="Game_network.cpp" />
+    <ClCompile Include="IK.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="Light.cpp" />
+    <ClCompile Include="Misc.cpp" />
+    <ClCompile Include="Moveable.cpp" />
+    <ClCompile Include="Mover.cpp" />
+    <ClCompile Include="MultiplayerGame.cpp" />
+    <ClCompile Include="physics\Clip.cpp" />
+    <ClCompile Include="physics\Force.cpp" />
+    <ClCompile Include="physics\Force_Constant.cpp" />
+    <ClCompile Include="physics\Force_Drag.cpp" />
+    <ClCompile Include="physics\Force_Field.cpp" />
+    <ClCompile Include="physics\Force_Spring.cpp" />
+    <ClCompile Include="physics\Physics.cpp" />
+    <ClCompile Include="physics\Physics_Actor.cpp" />
+    <ClCompile Include="physics\Physics_AF.cpp" />
+    <ClCompile Include="physics\Physics_Base.cpp" />
+    <ClCompile Include="physics\Physics_Monster.cpp" />
+    <ClCompile Include="physics\Physics_Parametric.cpp" />
+    <ClCompile Include="physics\Physics_Player.cpp" />
+    <ClCompile Include="physics\Physics_RigidBody.cpp" />
+    <ClCompile Include="physics\Physics_Static.cpp" />
+    <ClCompile Include="physics\Physics_StaticMulti.cpp" />
+    <ClCompile Include="physics\Push.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerIcon.cpp" />
+    <ClCompile Include="PlayerView.cpp" />
+    <ClCompile Include="Projectile.cpp" />
+    <ClCompile Include="Pvs.cpp" />
+    <ClCompile Include="script\Script_Compiler.cpp" />
+    <ClCompile Include="script\Script_Interpreter.cpp" />
+    <ClCompile Include="script\Script_Program.cpp" />
+    <ClCompile Include="script\Script_Thread.cpp" />
+    <ClCompile Include="SecurityCamera.cpp" />
+    <ClCompile Include="SmokeParticles.cpp" />
+    <ClCompile Include="Sound.cpp" />
+    <ClCompile Include="Target.cpp" />
+    <ClCompile Include="Trigger.cpp" />
+    <ClCompile Include="Weapon.cpp" />
+    <ClCompile Include="WorldSpawn.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Actor.h" />
+    <ClInclude Include="AF.h" />
+    <ClInclude Include="AFEntity.h" />
+    <ClInclude Include="ai\AAS.h" />
+    <ClInclude Include="ai\AAS_local.h" />
+    <ClInclude Include="ai\AI.h" />
+    <ClInclude Include="anim\Anim.h" />
+    <ClInclude Include="BrittleFracture.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="EndLevel.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="Fx.h" />
+    <ClInclude Include="GameBase.h" />
+    <ClInclude Include="GameEdit.h" />
+    <ClInclude Include="gamesys\Class.h" />
+    <ClInclude Include="gamesys\DebugGraph.h" />
+    <ClInclude Include="gamesys\Event.h" />
+    <ClInclude Include="gamesys\NoGameTypeInfo.h" />
+    <ClInclude Include="gamesys\SaveGame.h" />
+    <ClInclude Include="gamesys\SysCmds.h" />
+    <ClInclude Include="gamesys\SysCvar.h" />
+    <ClInclude Include="gamesys\TypeInfo.h" />
+    <ClInclude Include="Game_local.h" />
+    <ClInclude Include="IK.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="Light.h" />
+    <ClInclude Include="Misc.h" />
+    <ClInclude Include="Moveable.h" />
+    <ClInclude Include="Mover.h" />
+    <ClInclude Include="MultiplayerGame.h" />
+    <ClInclude Include="physics\Clip.h" />
+    <ClInclude Include="physics\Force.h" />
+    <ClInclude Include="physics\Force_Constant.h" />
+    <ClInclude Include="physics\Force_Drag.h" />
+    <ClInclude Include="physics\Force_Field.h" />
+    <ClInclude Include="physics\Force_Spring.h" />
+    <ClInclude Include="physics\Physics.h" />
+    <ClInclude Include="physics\Physics_Actor.h" />
+    <ClInclude Include="physics\Physics_AF.h" />
+    <ClInclude Include="physics\Physics_Base.h" />
+    <ClInclude Include="physics\Physics_Monster.h" />
+    <ClInclude Include="physics\Physics_Parametric.h" />
+    <ClInclude Include="physics\Physics_Player.h" />
+    <ClInclude Include="physics\Physics_RigidBody.h" />
+    <ClInclude Include="physics\Physics_Static.h" />
+    <ClInclude Include="physics\Physics_StaticMulti.h" />
+    <ClInclude Include="physics\Push.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerIcon.h" />
+    <ClInclude Include="PlayerView.h" />
+    <ClInclude Include="Projectile.h" />
+    <ClInclude Include="Pvs.h" />
+    <ClInclude Include="script\Script_Compiler.h" />
+    <ClInclude Include="script\Script_Interpreter.h" />
+    <ClInclude Include="script\Script_Program.h" />
+    <ClInclude Include="script\Script_Thread.h" />
+    <ClInclude Include="SecurityCamera.h" />
+    <ClInclude Include="SmokeParticles.h" />
+    <ClInclude Include="Sound.h" />
+    <ClInclude Include="Target.h" />
+    <ClInclude Include="Trigger.h" />
+    <ClInclude Include="Weapon.h" />
+    <ClInclude Include="WorldSpawn.h" />
+  </ItemGroup>
+  <ItemDefinitionGroup />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

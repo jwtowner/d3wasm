@@ -58,7 +58,7 @@ void idTarget_EndLevel::Spawn( void ) {
 		spawnArgs.GetString( "guiName", "guis/EndLevel.gui", guiName );
 
 		if (guiName.Length()) {
-			gui = idUserInterface::FindGui( guiName, true, false, true );
+			gui = uiManager->FindGui( guiName, true, false, true );
 		}
 	}
 

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{96f01d77-da7e-4621-acce-fc0d450d1b55}</ProjectGuid>
+    <RootNamespace>ui</RootNamespace>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="..\StaticLibrary.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClCompile Include="BindWindow.cpp" />
+    <ClCompile Include="ChoiceWindow.cpp" />
+    <ClCompile Include="DeviceContext.cpp" />
+    <ClCompile Include="EditWindow.cpp" />
+    <ClCompile Include="FieldWindow.cpp" />
+    <ClCompile Include="GameBearShootWindow.cpp" />
+    <ClCompile Include="GameBustOutWindow.cpp" />
+    <ClCompile Include="GameSSDWindow.cpp" />
+    <ClCompile Include="GameWindow.cpp" />
+    <ClCompile Include="GuiScript.cpp" />
+    <ClCompile Include="ListGUI.cpp" />
+    <ClCompile Include="ListWindow.cpp" />
+    <ClCompile Include="MarkerWindow.cpp" />
+    <ClCompile Include="RegExp.cpp" />
+    <ClCompile Include="RenderWindow.cpp" />
+    <ClCompile Include="SimpleWindow.cpp" />
+    <ClCompile Include="SliderWindow.cpp" />
+    <ClCompile Include="UserInterface.cpp" />
+    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="Winvar.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BindWindow.h" />
+    <ClInclude Include="ChoiceWindow.h" />
+    <ClInclude Include="DeviceContext.h" />
+    <ClInclude Include="EditWindow.h" />
+    <ClInclude Include="FieldWindow.h" />
+    <ClInclude Include="GameBearShootWindow.h" />
+    <ClInclude Include="GameBustOutWindow.h" />
+    <ClInclude Include="GameSSDWindow.h" />
+    <ClInclude Include="GameWindow.h" />
+    <ClInclude Include="GuiScript.h" />
+    <ClInclude Include="ListGUI.h" />
+    <ClInclude Include="ListGUILocal.h" />
+    <ClInclude Include="ListWindow.h" />
+    <ClInclude Include="MarkerWindow.h" />
+    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="RegExp.h" />
+    <ClInclude Include="RegExp_old.h" />
+    <ClInclude Include="RenderWindow.h" />
+    <ClInclude Include="SimpleWindow.h" />
+    <ClInclude Include="SliderWindow.h" />
+    <ClInclude Include="UserInterface.h" />
+    <ClInclude Include="UserInterfaceLocal.h" />
+    <ClInclude Include="Window.h" />
+    <ClInclude Include="Winvar.h" />
+  </ItemGroup>
+  <ItemDefinitionGroup />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

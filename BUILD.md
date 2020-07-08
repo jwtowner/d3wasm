@@ -29,14 +29,14 @@ c) Make Emscripten SDK tools available on the command line for all WSL instances
 ```
 $ nano $HOME/.profile
 ```
-Copy-paste the the following and save .profile file:
+Copy-paste the the following to the end of .profile and save the file:
 ```
 # import Emscripten development environment settings if it exists
 if [ -f "$HOME/emsdk/emsdk_env.sh" ] ; then
     source $HOME/emsdk/emsdk_env.sh >/dev/null 2>&1
 fi
 ```
-Note that the stdout/stderr IO redirection above to /dev/null is necessary to suppress errors in Visual Studio when it runs a WSL instance. 
+Note that the stdout/stderr IO redirection above to /dev/null is necessary to suppress errors in Visual Studio when it starts a new WSL instance. 
 
 #### 3) Build d3wasm
 a) Inside of Microsoft Visual Studio 2019 or using Git for Windows, clone the d3wasm source code such that it is stored on the Windows file system outside of Ubuntu:
